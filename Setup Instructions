@@ -1,0 +1,43 @@
+Clone and Initialize:
+
+bash
+
+git clone <your-repo-url>
+cd cancer-compass
+
+Install Dependencies:
+bash
+make install
+
+
+Configure Environment:
+Copy backend/.env.example to backend/.env and fill in:
+PORT=3000
+MONGO_URI=mongodb://localhost:27017/cancer_compass
+REDIS_HOST=localhost
+JWT_SECRET=your_secret_key
+AUNT_BERTHA_API_KEY=your_api_key
+FHIR_TOKEN=your_fhir_token
+
+Run Locally:
+bash
+
+make up
+Access frontend at http://localhost:8080, API at http://localhost:8080/api.
+
+Push to Git:
+bash
+
+git add .
+git commit -m "Initial scalable Cancer Compass implementation"
+git push origin main
+
+
+
+
+
+Next Steps
+Expand Frontend: Add screens (e.g., Dashboard.js) with API integration.
+Train AI: Populate ai/data/sdoh_data.csv with real/synthetic data.
+Deploy: Use AWS ECS/EKS or similar for production scaling.
+Test: Add unit tests (e.g., Jest for backend, Pytest for AI).
