@@ -15,7 +15,7 @@ Cancer Compass empowers navigators, patients, and caregivers by integrating open
 - API keys for Aunt Bertha, FHIR, etc.
 
 ### Installation
-1. Clone: `git clone https://github.com/yourusername/cancer-compass.git`
+1. Clone: `git clone https://github.com/RahulMalik22/cancer-compass.git`
 2. Install: `make install`
 3. Configure: Copy `backend/.env.example` to `backend/.env` and update vars
 4. Run: `make up`
