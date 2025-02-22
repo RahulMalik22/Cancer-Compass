@@ -1,0 +1,47 @@
+cancer-compass/
+├── /frontend/                    # React Native/React Web frontend
+│   ├── /public/                 # Static assets
+│   ├── /src/
+│   │   ├── /components/         # Reusable UI components
+│   │   ├── /screens/            # App screens
+│   │   ├── /services/           # API client services
+│   │   ├── /redux/              # State management
+│   │   └── App.js               # Main entry point
+│   ├── Dockerfile               # Docker config for frontend
+│   ├── package.json             # Dependencies
+│   └── .eslintrc.js             # Linting config
+├── /backend/                     # Node.js/Express backend
+│   ├── /src/
+│   │   ├── /config/             # Configuration (e.g., DB, env)
+│   │   ├── /controllers/        # Request handlers
+│   │   ├── /models/             # Mongoose/PostgreSQL schemas
+│   │   ├── /routes/             # API endpoints
+│   │   ├── /services/           # Business logic
+│   │   ├── /middleware/         # Authentication, logging
+│   │   ├── /utils/              # Helpers (e.g., error handling)
+│   │   └── server.js            # Main server
+│   ├── Dockerfile               # Docker config for backend
+│   ├── package.json             # Dependencies
+│   └── .env.example             # Environment vars template
+├── /ai/                          # Python AI/ML models
+│   ├── /src/
+│   │   ├── /models/             # ML model scripts
+│   │   ├── /data/               # Sample data for training
+│   │   └── /utils/              # Preprocessing helpers
+│   ├── Dockerfile               # Docker config for AI
+│   ├── requirements.txt         # Python dependencies
+│   └── train.py                 # Training script
+├── /infra/                       # Infrastructure configs
+│   ├── /nginx/                  # Reverse proxy config
+│   │   └── nginx.conf
+│   ├── docker-compose.yml       # Multi-service orchestration
+│   └── kubernetes/              # Optional: K8s manifests
+│       ├── deployment.yaml
+│       └── service.yaml
+├── /docs/                        # Documentation
+│   ├── technical_doc.md         # Technical documentation
+│   └── /screenshots/            # Placeholder for screenshots
+├── .gitignore                   # Git ignore
+├── .dockerignore                # Docker ignore
+├── README.md                    # Project overview
+└── Makefile                     # Build/run shortcuts
